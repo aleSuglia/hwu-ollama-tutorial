@@ -23,7 +23,7 @@ python llm_client.py
 
 This script demonstrates the basic usage of the Ollama API for text-only LLMs.
 
-### Script 2: `vlm_client.py`
+### Interacting with a VLM: `vlm_client.py`
 
 To run the second script, use the following command:
 
