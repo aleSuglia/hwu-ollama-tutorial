@@ -1,6 +1,8 @@
 from ollama import ChatResponse, GenerateResponse, chat, generate
 
-model_name = "llama3.2"
+model_name = "llama3.2:1b"
+
+PROMPT = "What is the capital of Italy?."
 
 
 def main():
@@ -9,7 +11,7 @@ def main():
         messages=[  # messages is a list of dictionaries representing the dialogue context of the model
             {
                 "role": "user",
-                "content": "What is the capital of Italy?",
+                "content": PROMPT,
             },
         ],
     )
@@ -21,7 +23,8 @@ def main():
 
     # for simpler workflows you might want to generate a single response without dialogue context
     new_response: GenerateResponse = generate(
-        model=model_name, prompt="What is the capital of Italy?"
+        model=model_name,
+        prompt=PROMPT
     )
 
     print(new_response.response)
