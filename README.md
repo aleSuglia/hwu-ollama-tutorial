@@ -39,7 +39,7 @@ python llm_client.py
 
 or just run it in favourite Python IDE.
 
-> ⚠️ **Warning:** if you got an error ("command not found" or sth similar), you need to close and reopen your IDE. 
+> ⚠️ **Warning:** if you got an error (`command not found` or something similar), you need to close and reopen your IDE. 
 
 This script demonstrates the basic usage of the Ollama API for text-only LLMs.
 
